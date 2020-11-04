@@ -44,4 +44,4 @@ sent = 0
 while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
-     print "send %s packet to %s throught port:%s"%(sent,ip,port)"
+     print "send %s packet to %s throught port:%s"%(sent,ip,port)
